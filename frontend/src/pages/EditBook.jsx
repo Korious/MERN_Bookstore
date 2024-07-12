@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import BackButton from '../components/BackButton';
 import Spinner from '../components/Spinner';
 import axios from 'axios';
@@ -27,7 +27,7 @@ const EditBook = () => {
         alert('An error happened. Please Chack console');
         console.log(error);
       });
-  }, [])
+  }, [id])
   
   const handleEditBook = () => {
     const data = {
